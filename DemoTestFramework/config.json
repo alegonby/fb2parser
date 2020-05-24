@@ -1,0 +1,9 @@
+{
+  "dev": {
+    "database": "C:/Users/Aliaksandr_Hanchar/AH/DQE_mentoring/Test_Auto/input/database/testDB.db",
+    "test_data_folder": "C:/Users/Aliaksandr_Hanchar/AH/DQE_mentoring/Test_Auto/DemoTestFramework/test_data"
+  },
+
+  "uat": {
+  }
+}

@@ -1,0 +1,44 @@
+
+
+Testing of C:/Users/Aliaksandr_Hanchar/AH/DQE_mentoring/Test_Auto/DemoTestFramework/test_data\smoke_tests.json was started
+
+
+Test case 'Check 1 book added to All books table'
+FAIL. Result is '2', but expected '1'
+	Query: Select count(*) from allbooks
+
+Test case 'Check book_name added to table'
+PASS. Result is 'Цветы для Элджернона' as expected
+	Query: Select book_name from allbooks
+
+Test case 'Check number_of_paragraph for book_name'
+PASS. Result is '2267' as expected
+	Query: Select number_of_paragraph from allbooks WHERE book_name = 'Цветы для Элджернона'
+
+Test case 'Check number_of_words for book_name'
+PASS. Result is '61270' as expected
+	Query: Select number_of_words  from allbooks WHERE book_name = 'Цветы для Элджернона'
+
+Test case 'Check number_of_letters  for book_name'
+PASS. Result is '296278' as expected
+	Query: Select number_of_letters from allbooks WHERE book_name = 'Цветы для Элджернона'
+
+Test case 'Check words_with_capital_letters for book_name'
+PASS. Result is '8242' as expected
+	Query: Select words_with_capital_letters from allbooks WHERE book_name = 'Цветы для Элджернона'
+
+Test case 'Check words_in_lowercase for book_name'
+PASS. Result is '53028' as expected
+	Query: Select words_in_lowercase from allbooks WHERE book_name = 'Цветы для Элджернона'
+
+Test case 'Check number of  distinct words in  Example table'
+PASS. Result is '12997' as expected
+	Query: Select count(*) from Example
+
+Test case 'Check number of words in Example table'
+PASS. Result is '61270' as expected
+	Query: Select sum(count) from Example
+
+Test case 'Check number of Cap words in  Example table'
+PASS. Result is '8242' as expected
+	Query: Select sum(count_upper_case) from Example
